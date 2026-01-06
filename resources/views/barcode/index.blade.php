@@ -601,7 +601,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     const svgText = await response.text();
 
                     // Convert the SVG string to a Blob
-                    const blob = new Blob([svgText], { type: 'image/svg+xml' });
+                  const blob = new Blob([svgText], { type: 'image/svg+xml' });
                     const url = URL.createObjectURL(blob);
 
                     preview.src = url;
