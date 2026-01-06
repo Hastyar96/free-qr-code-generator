@@ -604,6 +604,7 @@ document.addEventListener('DOMContentLoaded', function () {
                   const blob = new Blob([svgText], { type: 'image/svg+xml' });
                     const url = URL.createObjectURL(blob);
 
+                    // Update the preview
                     preview.src = url;
                     preview.style.display = 'block';
                     placeholder.style.display = 'none';
